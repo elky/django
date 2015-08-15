@@ -461,11 +461,10 @@ body.popup .submit-row {
 }
 
 .inline-group ul.tools a.add,
-.inline-group div.add-row a,
-.inline-group .tabular tr.add-row td a {
-    background: url(../img/icon_addlink.gif) 0 50% no-repeat;
+.inline-group .add-row a {
+    position: relative;
     padding-left: 14px;
-    font-size: 12px;
+    font-size: 13px;
     outline: 0; /* Remove dotted border around link */
 }
 
@@ -480,18 +479,7 @@ body.popup .submit-row {
     display: inline-block;
 }
 
-.add-another {
-    width: 10px;
-    height: 10px;
-    background-image: url(../img/icon_addlink.gif);
-}
-
 .related-lookup {
-    width: 16px;
-    height: 16px;
-    background-image: url(../img/selector-search.gif);
-    background-repeat: no-repeat;
-    background-position: 0 3px;
     vertical-align: middle;
     margin-top: -4px;
 }

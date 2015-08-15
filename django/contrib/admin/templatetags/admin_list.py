@@ -174,9 +174,9 @@ def result_headers(cl):
 
 
 def _boolean_icon(field_val):
-    icon_url = static('admin/img/icon-%s.gif' %
-                      {True: 'yes', False: 'no', None: 'unknown'}[field_val])
-    return format_html('<img src="{}" alt="{}" />', icon_url, field_val)
+    glyph = 'fa fa-%s-circle' % \
+             {True: 'check', False: 'minus', None: 'question'}[field_val]
+    return format_html('<i class="{}"></i>', glyph, field_val)
 
 
 def items_for_result(cl, result, form):

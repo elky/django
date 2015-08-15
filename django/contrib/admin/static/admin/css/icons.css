@@ -1,0 +1,281 @@
+@import url(font-awesome.css);
+
+.fa {
+    font-size: 15px;
+}
+
+.fa-pencil {
+    color: #efb80b;
+}
+
+.fa-plus {
+    color: #70bf2b;
+}
+
+.fa-times {
+    color: #dd4646;
+}
+
+.fa-check-circle {
+    color: #70bf2b;
+}
+
+.fa-minus-circle {
+    color: #dd4646;
+}
+
+.fa-question-circle {
+    color: #777;
+}
+
+a:hover .fa-pencil {
+    color: #ce9f0a;
+}
+
+a:hover .fa-plus {
+    color: #58a019;
+}
+
+a:hover .fa-times {
+    color: #bb2c2c;
+}
+
+.iconlink .fa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.iconlink .fa-plus {
+    top: 1px;
+}
+
+.object-tools a .fa {
+    top: 6px;
+    left: auto;
+    right: 9px;
+    color: #fff;
+}
+
+.add-another:before {
+    content: '\f067';
+    color: #70bf2b;
+}
+
+.related-lookup:before {
+    content: '\f002';
+    color: #666;
+}
+
+.related-lookup:hover:before {
+    color: #333;
+}
+
+th.sorted .sortoptions a, ul.messagelist li:before,
+.selector-add:before, .selector-remove:before,
+.selector-clearall:before, .selector-chooseall:before,
+.calendarbox .calendarnav-previous, .calendarbox .calendarnav-next,
+.system-message-title:before, .inline-deletelink:before, .related-lookup:before,
+.inline-group .add-row a:before, .inline-group .tools a.add:before, .add-another:before,
+.datetimeshortcuts .date-icon:before, .datetimeshortcuts .clock-icon:before {
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul.messagelist li:before, .system-message-title:before,
+.inline-group .add-row a:before, .inline-group .tools a.add:before,
+.selector-clearall:before, .selector-chooseall:before, .inline-deletelink:before {
+    position: absolute;
+}
+
+.selector-add, .selector-remove {
+    font-size: 18px;
+}
+
+.inline-deletelink {
+    font-size: 16px;
+}
+
+th.sorted .sortoptions a, ul.messagelist li:before, .system-message-title:before {
+    font-size: 14px;
+}
+
+/* SELECT FILTER */
+
+.selector-chooseall:before,
+.selector-clearall:before {
+    top: 4px;
+    color: #999;
+}
+
+.selector-chooseall:before {
+    content: '\f138';
+    right: 0;
+}
+
+.selector-clearall:before {
+    content: '\f137';
+    left: 0;
+}
+
+.selector-chooseall.active:before,
+.selector-clearall.active:before {
+    color: #447e9b;
+}
+
+.selector-add:before {
+    content: '\f0a9';
+}
+
+.selector-remove:before {
+    content: '\f0a8';
+}
+
+.stacked .selector-add:before {
+    content: '\f0ab';
+}
+
+.stacked .selector-remove:before {
+    content: '\f0aa';
+}
+
+.selector-add:before, .selector-remove:before {
+    line-height: 18px;
+    color: #999;
+}
+
+.selector-add.active:before, .selector-remove.active:before {
+  color: #447e9b;
+}
+
+.selector h2 .fa-question-circle {
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+.selector-chosen h2 .fa-question-circle {
+    color: #eee;
+}
+
+.selector .selector-filter label .fa-search,
+.inline-group .aligned .selector .selector-filter label .fa-search {
+    vertical-align: -3px;
+}
+
+/* EDIT INLINE */
+
+.inline-group .add-row a:before,
+.inline-group .tools a.add:before {
+    top: 1px;
+    left: 0;
+    content: '\f067';
+    line-height: 18px;
+    color: #70bf2b;
+}
+
+.inline-group .add-row a:hover:before,
+.inline-group .tools a.add:hover:before {
+    color: #58a019;
+}
+
+.inline-deletelink:before {
+  top: 0;
+  left: 0;
+  content: '\f057';
+  color: #aaa;
+  text-indent: 0;
+}
+
+.inline-deletelink:hover:before {
+  color: #777;
+}
+
+/* SORTABLE TABLES */
+
+th.sorted .sortoptions a.sortremove:before {
+  content: '\f0dc';
+}
+
+th.sorted .sortoptions a.sortremove:after {
+  content: '\\';
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  font-size: 16px;
+}
+
+th.sorted .sortoptions a.ascending:before {
+  content: '\f0d8';
+}
+
+th.sorted .sortoptions a.descending:before {
+  content: '\f0d7';
+  vertical-align: -1px;
+}
+
+/* MESSAGES */
+
+ul.messagelist li:before {
+  content: '\f058';
+  top: 13px;
+  left: 40px;
+  line-height: 1;
+  color: #70bf2b;
+}
+
+ul.messagelist li.warning:before {
+  content: '\f071';
+  color: #efb80b;
+}
+
+ul.messagelist li.error:before {
+  content: '\f056';
+  color: #dd4646;
+}
+
+.system-message .system-message-title:before {
+  content: '\f056';
+  top: 4px;
+  left: 8px;
+}
+
+/* CHANGELISTS */
+
+#changelist-form .fa {
+    font-size: 13px;
+}
+
+#changelist #changelist-search .fa-search {
+    margin-right: 5px;
+}
+
+/* DATE AND TIME */
+
+.datetimeshortcuts .date-icon, .datetimeshortcuts .clock-icon {
+    position: relative;
+    top: -2px;
+    font-size: 16px;
+    color: inherit;
+}
+
+.datetimeshortcuts .date-icon:before {
+    content: '\f073';
+}
+
+.datetimeshortcuts .clock-icon:before {
+    content: '\f017';
+}
+
+.calendarbox .calendarnav-previous:before {
+    content: '\f137';
+}
+
+.calendarbox .calendarnav-next:before {
+    content: '\f138';
+}

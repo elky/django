@@ -28,13 +28,13 @@
             {% endif %}
 
             {% if model.add_url %}
-                <td><a href="{{ model.add_url }}" class="addlink">{% trans 'Add' %}</a></td>
+                <td><a href="{{ model.add_url }}" class="iconlink"><i class="fa fa-plus"></i>{% trans 'Add' %}</a></td>
             {% else %}
                 <td>&nbsp;</td>
             {% endif %}
 
             {% if model.admin_url %}
-                <td><a href="{{ model.admin_url }}" class="changelink">{% trans 'Change' %}</a></td>
+                <td><a href="{{ model.admin_url }}" class="iconlink"><i class="fa fa-pencil"></i>{% trans 'Change' %}</a></td>
             {% else %}
                 <td>&nbsp;</td>
             {% endif %}
@@ -61,7 +61,10 @@
             {% else %}
             <ul class="actionlist">
             {% for entry in admin_log %}
-            <li class="{% if entry.is_addition %}addlink{% endif %}{% if entry.is_change %}changelink{% endif %}{% if entry.is_deletion %}deletelink{% endif %}">
+            <li class="iconlink">
+                {% if entry.is_addition %}<i class="fa fa-plus"></i>{% endif %}
+                {% if entry.is_change %}<i class="fa fa-pencil"></i>{% endif %}
+                {% if entry.is_deletion %}<i class="fa fa-times"></i>{% endif %}
                 {% if entry.is_deletion or not entry.get_admin_url %}
                     {{ entry.object_repr }}
                 {% else %}

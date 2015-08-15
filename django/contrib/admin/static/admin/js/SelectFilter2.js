@@ -46,8 +46,8 @@ Requires core.js, SelectBox.js and addevent.js.
             selector_available.className = 'selector-available';
             var title_available = quickElement('h2', selector_available, interpolate(gettext('Available %s') + ' ', [field_name]));
             quickElement(
-                'span', title_available, '',
-                'class', 'help help-tooltip help-icon',
+                'i', title_available, '',
+                'class', 'fa fa-question-circle help-tooltip',
                 'title', interpolate(
                     gettext(
                         'This is the list of available %s. You may choose some by ' +
@@ -64,8 +64,8 @@ Requires core.js, SelectBox.js and addevent.js.
             var search_filter_label = quickElement('label', filter_p, '', 'for', field_id + '_input');
 
             quickElement(
-                'span', search_filter_label, '',
-                'class', 'help-tooltip search-label-icon',
+                'i', search_filter_label, '',
+                'class', 'fa fa-search help-tooltip',
                 'title', interpolate(gettext("Type into this box to filter down the list of available %s."), [field_name])
             );
 
@@ -81,9 +81,9 @@ Requires core.js, SelectBox.js and addevent.js.
             // <ul class="selector-chooser">
             var selector_chooser = quickElement('ul', selector_div);
             selector_chooser.className = 'selector-chooser';
-            var add_link = quickElement('a', quickElement('li', selector_chooser), gettext('Choose'), 'title', gettext('Choose'), 'href', 'javascript:void(0);', 'id', field_id + '_add_link');
+            var add_link = quickElement('a', quickElement('li', selector_chooser), '', 'title', gettext('Choose'), 'href', 'javascript:void(0);', 'id', field_id + '_add_link');
             add_link.className = 'selector-add';
-            var remove_link = quickElement('a', quickElement('li', selector_chooser), gettext('Remove'), 'title', gettext('Remove'), 'href', 'javascript:void(0);', 'id', field_id + '_remove_link');
+            var remove_link = quickElement('a', quickElement('li', selector_chooser), '', 'title', gettext('Remove'), 'href', 'javascript:void(0);', 'id', field_id + '_remove_link');
             remove_link.className = 'selector-remove';
 
             // <div class="selector-chosen">
@@ -91,8 +91,8 @@ Requires core.js, SelectBox.js and addevent.js.
             selector_chosen.className = 'selector-chosen';
             var title_chosen = quickElement('h2', selector_chosen, interpolate(gettext('Chosen %s') + ' ', [field_name]));
             quickElement(
-                'span', title_chosen, '',
-                'class', 'help help-tooltip help-icon',
+                'i', title_chosen, '',
+                'class', 'fa fa-question-circle help-tooltip',
                 'title', interpolate(
                     gettext(
                         'This is the list of chosen %s. You may remove some by ' +

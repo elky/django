@@ -255,9 +255,9 @@
 
             // next-prev links
             var cal_nav = quickElement('div', cal_box);
-            var cal_nav_prev = quickElement('a', cal_nav, '<', 'href', 'javascript:DateTimeShortcuts.drawPrev(' + num + ');');
+            var cal_nav_prev = quickElement('a', cal_nav, '', 'href', 'javascript:DateTimeShortcuts.drawPrev(' + num + ');');
             cal_nav_prev.className = 'calendarnav-previous';
-            var cal_nav_next = quickElement('a', cal_nav, '>', 'href', 'javascript:DateTimeShortcuts.drawNext(' + num + ');');
+            var cal_nav_next = quickElement('a', cal_nav, '', 'href', 'javascript:DateTimeShortcuts.drawNext(' + num + ');');
             cal_nav_next.className = 'calendarnav-next';
 
             // main box
