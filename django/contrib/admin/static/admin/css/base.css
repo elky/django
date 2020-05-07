@@ -747,7 +747,7 @@ table#change-history tbody th {
 
 #container > .main {
     display: flex;
-    flex: 1 0;
+    flex: 1 0 auto;
 }
 
 .main > .content {
