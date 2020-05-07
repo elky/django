@@ -13,8 +13,8 @@ class AdminSiteWithoutSidebar(admin.AdminSite):
     enable_nav_sidebar = False
 
 
-site_with_sidebar = AdminSiteWithSidebar(name="test_with_sidebar")
-site_without_sidebar = AdminSiteWithoutSidebar(name="test_without_sidebar")
+site_with_sidebar = AdminSiteWithSidebar(name='test_with_sidebar')
+site_without_sidebar = AdminSiteWithoutSidebar(name='test_without_sidebar')
 
 site_with_sidebar.register(User)
 

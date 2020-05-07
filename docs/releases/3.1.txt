@@ -78,8 +78,8 @@ Minor features
   to clear all filters.
 
 * The admin now has a sidebar on larger screens for easier navigation.
-  It is enabled by default but can be disabled by using a custom AdminSite and
-  setting :attr:`.AdminSite.enable_nav_sidebar` to ``False``.
+  It is enabled by default but can be disabled by using a custom ``AdminSite``
+  and setting :attr:`.AdminSite.enable_nav_sidebar` to ``False``.
 
 * ``XRegExp`` is upgraded from version 2.0.0 to 3.2.0.
 
